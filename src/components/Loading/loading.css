@@ -1,0 +1,15 @@
+.loading{
+    position: fixed;
+    background-color: grey;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    text-align: center;
+    padding-top: 25%;
+    display: none;
+}
+
+.active{
+    display: block !important;
+}

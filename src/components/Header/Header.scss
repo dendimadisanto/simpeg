@@ -1,0 +1,82 @@
+.full-menu{
+    background-color: darken($color: #000000, $amount: 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-size: cover;
+    opacity: 0;
+    visibility: hidden;   
+    transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    background-image: linear-gradient(to right, darkOrchid , purple);
+}
+
+.appear{
+    background-size: 100%;
+    opacity: 1;
+    visibility: visible;   
+    transition: opacity 0.7s, visibility 0s;
+}
+
+.full-menu {
+    .fullmenu-content{
+        height: 100%;
+        width: 100%;
+        padding: 3rem;
+    }
+}
+
+.page-menu {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.page-menu li {
+    line-height: 50px;
+    margin-left: -25px;
+}
+
+.page-menu li:last-child {
+    line-height: 90px;
+}
+
+.page-menu li a {
+    color: #fff;
+    font-size: 26px;
+    position: relative;
+    font-weight: 500;
+     
+}
+
+.menu-item{
+    width: 220px;
+    height: 220px;
+    margin: 10px;
+}
+
+.items{
+    margin-right: 2rem;
+}
+
+.msg{
+    position: absolute;
+    background-color: red;
+    width: 'auto';
+    text-align: center;
+    top: 4px;
+}
+
+.dropCustoms{
+    transform: translate3d(-135px, 52px, 0px) !important;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+

@@ -1,0 +1,47 @@
+.img-profile{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.profile{
+    text-align: center;
+}
+
+.print{
+    position: relative;
+    top: -40px;
+}
+
+.employee-data{
+    padding:2rem;
+    max-height: 800px;
+    overflow: auto;
+}
+
+.employee-data_{
+    padding:2rem;
+    height: 800px;
+}
+
+.data-items{
+    margin-top: 50px;
+}
+
+.view-more{
+    position: absolute;
+    right: 1rem;
+    top: 3rem;
+    color: forestgreen;
+    cursor: pointer;
+}
+
+.jumbotron{
+    background-image: url(https://gigantic.store/wp-content/uploads/2019/04/city-landscap-hd.jpg);
+    background-size: contain;
+}
+
+h5{
+    color: purple;
+}
