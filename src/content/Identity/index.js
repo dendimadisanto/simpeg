@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Accordion from '../../components/Accordion';
 import './Identity.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { pegawaiActions } from '../../_actions/pegawai.action';
@@ -18,17 +17,9 @@ function Identity(){
     
       
     return(
-        <div className="container-acc">
+       <div>
             <Loading active={loading}/>
-            <div style={{padding:"3rem",marginBottom:"-4%"}} className="row">
-                <h4>Personal Data</h4>
-            </div>
-            <div style={{padding:"2rem"}} className="row">
-                <div className="col-md-3">
-                        <Accordion/>
-                </div>
-                <div className="col-md-9">
-                    <div className="jumbotron">
+           <div className="jumbotron">
                         <div className="print float-right">
                             <i className="fa fa-print"></i>
                         </div>
@@ -229,9 +220,7 @@ function Identity(){
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+       </div>
     );
 }
 

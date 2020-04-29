@@ -21,6 +21,11 @@ const initialState = {
             ...state,
               data: action.value
             };
+        case pegawaiConstants.PEGAWAI_ACCORDION:
+          return {
+          ...state,
+            accordion: action.data
+          };
       default:
         return state
     }

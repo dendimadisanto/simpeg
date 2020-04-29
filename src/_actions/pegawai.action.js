@@ -5,7 +5,8 @@ import Swal from 'sweetalert2';
 
 
 export const pegawaiActions = {
-    getDataPegawai
+    getDataPegawai,
+    changeStateAcc
 }
 
 function getDataPegawai(username,password){
@@ -31,5 +32,11 @@ function getDataPegawai(username,password){
     function request(value) { return { type: pegawaiConstants.PEGAWAI_REQUEST, value} }
     function success(value) { return { type: pegawaiConstants.PEGAWAI_SUCCESS, value } }
     function failure(value) { return { type: pegawaiConstants.PEGAWAI_ERROR, value} }
+}
+
+function changeStateAcc(data){
+    return {
+        type:pegawaiConstants.PEGAWAI_ACCORDION, data
+    }
 }
 
